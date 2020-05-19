@@ -11,3 +11,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap');
+
+.home {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111111;
+  color: white;
+  font-family: 'DM Mono', monospace;
+}
+.top {
+  width: 90%;
+  padding: 1% 5% 0 5%;
+}
+.title {
+  font-size: 1vw;
+  float: left;
+  cursor: pointer;
+}
+.title::selection {
+  background: transparent
+}
+
+.menu-icon {
+  width: 5%;
+  height: 5%;
+  margin-top: 2%;
+  float: right;
+  cursor: pointer;
+  opacity: 0;
+}
+
+
+
+@media (max-width:300px) { 
+  .title {
+    font-size: medium;
+  }
+ }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: large;
+  }
+  .menu-icon {
+    width: 10%;
+    height: 10%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 1200px) { 
+  .title {
+    font-size: medium;
+  }
+}
